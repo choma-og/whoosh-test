@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whoosh</title>
+    <link rel="icon" href="/public/fav.png" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/style.scss"/>
+    <script type="module" crossorigin src="/whoosh-test/assets/js/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/whoosh-test/assets/js/vendor.js">
+    <link rel="stylesheet" href="/whoosh-test/assets/css/style.css">
+  </head>  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="header__logo">
+            <picture>
+              <source
+                srcset="/whoosh-test/assets/img/logo-min.svg "
+                media="(max-width: 600px)"
+              />
+              <img src="/whoosh-test/assets/img/logo-big.svg" alt="logo" />
+            </picture>
+          </a>
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <nav class="menu__body" id="menu-body">
+              <div class="menu__city city">
+                <span class="menu__city-btn">NY, Manhattan</span>
+                <div id="popup-header" class="popup-city">
+                  <div class="popup-city__body">
+                    <ul class="popup-city__list">
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Chicago</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Philadelphia</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Dallas</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Jacksonville</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Chicago</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Philadelphia</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Dallas</a>
+                      </li>
+                      <li class="popup-city__item">
+                        <a href="" class="popup-city__link">Jacksonville</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__track">
+                <div class="menu__search">
+                  <form class="menu__form form-menu" action="">
+                    <input
+                      class="form-menu__input"
+                      type="text"
+                      placeholder="Track a Package"
+                    />
+                    <a href="#" class="form-menu__btn">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM7 12.6667C10.2217 12.6667 12.6667 10.2217 12.6667 7C12.6667 3.77834 10.2217 1.33333 7 1.33333C3.77834 1.33333 1.33333 3.77834 1.33333 7C1.33333 10.2217 3.77834 12.6667 7 12.6667Z" fill="#B7C6E7"/>
+                        <path d="M7.33325 10L10.6666 8.66667V5.33333L7.33325 6.51254V10Z" fill="#B7C6E7"/>
+                        <path d="M6.66675 10L3.33341 8.66667V5.33333L6.66675 6.51254V10Z" fill="#B7C6E7"/>
+                        <path d="M6.99992 3.33333L3.33325 4.66667L6.99992 6L10.6666 4.66667L6.99992 3.33333Z" fill="#B7C6E7"/>
+                        <path d="M11.9523 11L16 15.0477L15.0477 16L11 11.9523L11.9523 11Z" fill="#B7C6E7"/>
+                      </svg>
+                    </a>
+                  </form>
+                </div>
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="#" class="menu__link">Send a Parcel</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Become a
+                      Courier</a></li>
+                  <li class="menu__item hidden"><a
+                      href="#"
+                      class="menu__link"
+                    >Affiliate Program</a></li>
+                  <li class="menu__item hidden"><a href="#" class="menu__link">Help &
+                    Support</a></li>
+                </ul>
+                <a href="" class="header__btn btn hidden">Take a complex order</a>
+              </div>
+            </nav>
+          </div>
+            <button class="header__login">
+            <img src="img/header/login.svg" alt="login" />
+          </button>
+        </div>
+      </header>      <main class="main">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__service service">
+                <h2 class="service__title">Our service started work in New York</h2>
+                <p class="service__text">We&nbsp;make delivery exactly at&nbsp;the time
+                  you need&nbsp;&mdash; we&nbsp;can start to&nbsp;fulfill the order
+                  a&nbsp;few minutes after it&nbsp;arrives, or&nbsp;we&nbsp;can deliver
+                  on&nbsp;a&nbsp;specific day and hour.</p>
+                <a href="#" class="service__read">
+                  Read more
+                  <img src="/whoosh-test/assets/img/vector-more.svg" alt="read more" />
+                </a>
+              </div>
+              <div class="hero__video video">
+                <h3 class="video__title">How it works</h3>
+                <div class="video__block">
+                  <button class="video__block-play">
+                    <picture class="stages__img">
+                      <source
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAaCAYAAABYQRdDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgBrZaBDYIwEEVb4wA6gYwAG8AGuIGO4AS6gWECRnAEGMENZAPY4PynNgoCLe295AfSlJefEHpo9YGINrjESKe1vqtQIMyRlr6USKR84YbIg/7htYPyAQ+mNE+5uLWD1LTOpaWGK71fqKjUtI7mnCu1nAhh8Xlyh0dTa2ufptbWoVLDBeLKtJaSMilSSktfYrTdSUuZrbS04RNOUlojGd9ISDvkhIYZ0vDCWoXBh/neyAwhTQvIkqGQ8WnaIEfI6qkNS5sWSDInZFybNsrSrge+gNhyEt3I5WAeSHnwtSMyXnMfISPinPoTtaKAEa1/xGI/E0+s/rT8GYzq1wAAAABJRU5ErkJggg== "
+                        media="(max-width: 480px)"
+                      />
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEHSURBVHgBvZaLDYIwFEVfjQM4AiM4gm6gG7CBbCAjuAEjyAawAWxQNpANrq8RIiIotK89yU0TSHpyk/4UdQDY8XDitJxaKdWQNCy54JsrScITxphHcyKSgCeq8B/3dlhO4dQO63hwYrIBdmSr28Eevaod3Mnw2oPeRQbNOYQQ9cxuA2X+kiwN5zg+wjYkT8TR43Y+Gg1pqGvnW/SWBRAZylCi1sdimCSUKA+2GHw3KqnfvPBHMjRuSZ6Gc+YW9cdXyHLD3JUBGTQCXBPzLYRE5qFyoqXAjvuiFg4i0yIhG1ZICjg+IDV8tRiJkh+SClKP/E6WTkhSEkQNZBEPe45ZTTkfIS0J8gQviMp9DbsAuAAAAABJRU5ErkJggg==" alt="play" />
+                    </picture>
+                  </button>
+                  <img src="/whoosh-test/assets/img/video.jpg" alt="video" />
+                </div>
+              </div>
+            </div>
+            <div class="hero__request parsel">
+              <div class="parsel__content">
+                <div class="parsel__box">
+                  <h3 class="parsel__title">Send a Parcel</h3>
+                  <div class="parsel__tooltip tooltip">
+                    <p class="parsel__tooltip-text">A commission is a piece of work that
+                      someone is asked to do and is paid for.</p>
+                    <div class="parsel__tooltip-icon">
+                      <svg
+                        width="2"
+                        height="12"
+                        viewBox="0 0 2 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 5C0 4.44772 0.447715 4 1 4C1.55228 4 2 4.44772 2 5V11C2 11.5523 1.55228 12 1 12C0.447715 12 0 11.5523 0 11V5Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="parsel__switch switch">
+                  <input type="radio" name="radio" id="car" />
+                  <label for="car" class="label1">
+                    <img src="img/hero/car.svg" alt="human" />
+                    <span>up to 10lb</span>
+                  </label>
+                  <input type="radio" name="radio" id="car2" checked />
+                  <label for="car2" class="label2">
+                    <img src="img/hero/car.svg" alt="car" />
+                    <span>up to 130lb</span>
+                  </label>
+                  <input type="radio" name="radio" id="car3" />
+                  <label for="car3" class="label3">
+                    <img src="img/hero/truck.svg" alt="truck" />
+                    <span>over 130lb</span>
+                  </label>
+                </div>
+                <form class="parsel__form form-parsel">
+                  <div class="form-parsel__content">
+                    <label class="form-parsel__fiel pickup__fiel" for="pickup">
+                      <span class="form-parsel__location">Pickup location</span>
+                      <input
+                        id="pickup"
+                        class="form-parsel__input"
+                        type="text"
+                        name="pickup"
+                        placeholder="location"
+                      />
+                    </label>
+                    <label class="form-parsel__fiel pickup__drop" for="drop">
+                      <span class="form-parsel__location">Drop location</span>
+                      <input
+                        id="drop"
+                        class="form-parsel__input"
+                        type="text"
+                        name="drop"
+                        placeholder="location"
+                      />
+                    </label>
+                  </div>
+                  <button type="submit" class="form-parsel__btn btn">Order</button>
+                  <button type="reset" class="form-parsel__clear">
+                    <img src="/whoosh-test/assets/img/clear.svg" alt="clear" />
+                    Clear All
+                  </button>
+                </form>
+              </div>
+              <div class="hero__track track">
+                <h3 class="track__title">Track a package</h3>
+                <form class="track__form" action="" method="post">
+                  <input
+                    class="track__input"
+                    type="text"
+                    placeholder="Enter code"
+                    aria-label="Track a Package"
+                  />
+                  <a class="track__btn" href="#">
+                    <img src="/whoosh-test/assets/img/search.svg" alt="track" />
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>        <section class="express section">
+          <div class="express__container">
+            <h2 class="express__title section__title">
+              Express delivery market revolution
+            </h2>
+            <p class="express__text section__text">Express courier service in&nbsp;the
+              city. We&nbsp;are a&nbsp;reliable logistics partner for delivery services
+              for online stores and restaurants!
+            </p>
+            <div class="express__resource resourse">
+              <div class="resourse__card card-resourse">
+                <h3 class="card-resourse__title">Become a Courier</h3>
+                <div class="card-resourse__additional">
+                  <div class="card-resourse__circle">
+                    <img
+                      class="circle-img"
+                      src="/whoosh-test/assets/img/bicicle.svg"
+                      alt="bicicle"
+                    />
+                  </div>
+                  <img src="/whoosh-test/assets/img/Route.svg" alt="route" />
+                </div>
+                <p class="card-resourse__text">You choose a&nbsp;schedule. You decide
+                  how much and when&nbsp;to earn. Earnings from day one</p>
+              </div>
+              <div class="resourse__card card-resourse">
+                <h3 class="card-resourse__title">Help & Support</h3>
+                <div class="card-resourse__additional">
+                  <div class="card-resourse__circle">
+                    <img
+                      class="circle-img"
+                      src="/whoosh-test/assets/img/Support.svg"
+                      alt="support"
+                    />
+                  </div>
+                </div>
+                <p class="card-resourse__text">Door-to-door delivery in&nbsp;90&nbsp;minutes or&nbsp;at&nbsp;your convenience
+                </p>
+        
+              </div>
+              <div class="resourse__card card-resourse">
+                <h3 class="card-resourse__title">Affiliate Program</h3>
+                <div class="card-resourse__additional">
+                  <div class="card-resourse__circle">
+                    <img
+                      class="circle-img"
+                      src="/whoosh-test/assets/img/rukzak.svg"
+                      alt="backpack"
+                    />
+                  </div>
+                </div>
+                <p class="card-resourse__text">Use our service and feel<br/>new quality of&nbsp;this traditional service!</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-line circle-add">
+            <div class="section-line__circle">
+              <img
+                class="section-line__box"
+                src="/whoosh-test/assets/img/box.svg"
+                alt="decor box"
+              />
+            </div>
+          </div>
+        </section>        <section class="partners section">
+          <div class="partners__container">
+            <h2 class="partners__title section__title">Our Partners</h2>
+            <div class="partners__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="" class="swiper__link">
+                  <img
+                      src="/whoosh-test/assets/img/1.svg"
+                      alt="alva"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="swiper__link">
+                  <img
+                      src="/whoosh-test/assets/img/2.svg"
+                      alt="tendo"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="swiper__link">
+                  <img
+                      src="/whoosh-test/assets/img/3.svg"
+                      alt="fagor"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="swiper__link">
+                  <img
+                      src="/whoosh-test/assets/img/4.svg"
+                      alt="radioshock"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="swiper__link">
+                    <img
+                      src="/whoosh-test/assets/img/guitar-center.svg"
+                      alt="guitar center"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a class="colloborate"><img
+                src="/whoosh-test/assets/img/partners-rukz.svg"
+                alt="our partners"
+              />Let's collaborate
+            </a>
+          </div>
+        </section>        <section class="advantages">
+          <div class="advantages__container">
+            <h2 class="advantages__title section__title">What we do</h2>
+            <p class="advantages__text section__text">Express courier service in the
+              city. We are a reliable logistics partner for delivery services for
+              online stores and restaurants!</p>
+            <div class="advantages__cards">
+              <div class="advantages__card card">
+                <div class="card__img">
+                  <picture class="stages__img">
+                    <source
+                      srcset="/whoosh-test/assets/img/1-360.svg "
+                      media="(max-width: 480px)"
+                    />
+                    <img src="/whoosh-test/assets/img/12.svg" alt="online calculation" />
+                  </picture>
+                </div>
+                <h3 class="card__title">Online <a href="#">calculation</a></h3>
+                <p class="card__text">Instant calculation of&nbsp;the cost in&nbsp;the
+                  order form, the price is&nbsp;updated in&nbsp;the process
+                  of&nbsp;filling out the form
+                </p>
+              </div>
+              <div class="advantages__card card">
+                <div class="card__img">
+                  <picture class="stages__img">
+                    <source
+                      srcset="/whoosh-test/assets/img/2-360.svg "
+                      media="(max-width: 480px)"
+                    />
+                    <img src="/whoosh-test/assets/img/22.svg" alt="minimum paperwork" />
+                  </picture>
+                </div>
+                <h3 class="card__title">Minimum paperwork</h3>
+                <p class="card__text">You can place an&nbsp;order for courier or
+                  freight delivery without registration and contract.</p>
+              </div>
+              <div class="advantages__card card">
+                <div class="card__img">
+                  <picture class="stages__img">
+                    <source
+                      srcset="/whoosh-test/assets/img/3-360.svg "
+                      media="(max-width: 480px)"
+                    />
+                    <img src="/whoosh-test/assets/img/32.svg" alt="convenient payment" />
+                  </picture>
+                </div>
+                <h3 class="card__title">Convenient payment</h3>
+                <p class="card__text">You can pay for delivery by&nbsp;card or in cash
+                  at&nbsp;any of&nbsp;the order addresses. For legal entities non-cash
+                  is&nbsp;available.
+                  <button class="card-more"><img
+                      src="/whoosh-test/assets/img/card-more.svg"
+                      alt="read more"
+                    /></button>
+                </p>
+              </div>
+            </div>
+            <button class="advantages__btn btn-fill">Get started!</button>
+            <img
+              class="advantages__decor"
+              src="/whoosh-test/assets/img/Intersect.png"
+              alt="decor line"
+            />
+          </div>
+        </section>        <section class="payment">
+          <div class="payment__container">
+            <h2 class="payment__title section__title">Payment methods</h2>
+            <div class="payment__swiper swiper">
+              <div class="payment__content">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/whoosh-test/assets/img/4.jpg" alt="pay google" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/whoosh-test/assets/img/5.jpg" alt="sofort" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/whoosh-test/assets/img/1.jpg" alt="union pay" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/whoosh-test/assets/img/2.jpg" alt="visa" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/whoosh-test/assets/img/6.jpg" alt="mastercard" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/whoosh-test/assets/img/3.jpg" alt="amex" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next">
+                <img src="/whoosh-test/assets/img/Right.svg" alt="right">
+              </div>
+              <div class="swiper-button-prev">
+                <img src="/whoosh-test/assets/img/Left.svg" alt="left">
+              </div>
+            </div>
+          </div>
+          <div class="section-line circle-add">
+            <div class="section-line__circle"><img
+                class="section-line__box"
+                src="/whoosh-test/assets/img/box.svg"
+                alt="decor box"
+              />
+              </div>
+          </div>
+        </section>        <section class="text">
+          <div class="text__container">
+            <p class="text__descr">
+              <span class="text__main">
+                Since 2019, LibertyWalk has successfully provided express courier
+                delivery services in&nbsp;the city for both individuals and legal
+                entities, and is&nbsp;also a&nbsp;reliable logistics partner for
+                delivery services for online stores and restaurants! Express delivery
+                of&nbsp;documents and parcels for organizations, express delivery
+                of&nbsp;correspondence, purchases, flowers, food, gifts and goods
+                up&nbsp;to&nbsp;1.5 tons&nbsp;&mdash; the most frequent orders
+                in&nbsp;our company.
+              </span>
+              <span class="text__hidden">
+                <br /><br />
+                But at&nbsp;the same time, we&nbsp;do&nbsp;not limit the range
+                of&nbsp;courier services and without problems we&nbsp;can buy and bring
+                goods and products from the online store, arrange delivery for the
+                online store, cafe, supermarket, restaurant or&nbsp;any other business.
+                Around the clock on&nbsp;our website you can call a&nbsp;courier
+                in&nbsp;just a&nbsp;minute and arrange an&nbsp;express courier delivery
+                without unnecessary bureaucracy, negotiations and calls to&nbsp;the call
+                center.
+              </span>
+              <button class="text__btn" id="text__btn" onclick="readMore()">
+                <img src="/whoosh-test/assets/img/dot.svg" alt="decor dot" />
+                <img src="/whoosh-test/assets/img/dot.svg" alt="decor dot" />
+                <img src="/whoosh-test/assets/img/dot.svg" alt="decor dot" />
+            </button>
+            </p>
+          </div>
+          <div class="section-line"></div>
+        </section>      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__content">
+            <div class="footer__about about-footer">
+              <h3 class="about-footer__title footer__title">About Whoosh</h3>
+              <p class="about-footer__text footer__text">
+                Express delivery of documents and parcels for organizations, express
+                delivery of correspondence, purchases and other goods
+              </p>
+            </div>
+            <div class="footer__lists">
+              <div class="footer__menu menu-footer">
+                <h3 class="menu-footer__title footer__title">Menu</h3>
+                <div class="footer__line"></div>
+                <ul class="menu-footer__list footer__list">
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">About company</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Contact</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Rules</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">FAQ</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Reviews</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Cargo transportation</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link">Tariffs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__services services-footer">
+                <h3 class="services-footer__title footer__title">Services</h3>
+                <div class="footer__line"></div>
+                <ul class="services-footer__list footer__list">
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">Online stores</a>
+                  </li>
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">Legal entity</a>
+                  </li>
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">API Integration</a>
+                  </li>
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">Contract</a>
+                  </li>
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">Jobs</a>
+                  </li>
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">Courier job</a>
+                  </li>
+                  <li class="services-footer__item">
+                    <a href="#" class="services-footer__link">The blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__contact contact-footer">
+              <h3 class="contact-footer__title footer__title">Contact us</h3>
+              <div class="footer__line"></div>
+              <a class="contact-footer__tel" href="tel:+78009345959">8 800 934 5959</a>
+              <p class="contact-footer__text">
+                2545&nbsp;W. Diversey Ave. 3rd&nbsp;Floor Chicago, IL&nbsp;60647
+              </p>
+              <ul class="contact-footer__social social">
+                <li class="social__item">
+                  <a href="" class="social__link facebook">
+                    <img src="img/footer/facebook.svg" alt="facebook" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link vk">
+                    <img src="img/footer/vk.svg" alt="vk" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link youtube">
+                    <img src="img/footer/youtube.svg" alt="youtube" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link instagram">
+                    <img src="img/footer/instagram.svg" alt="instagram" />
+                  </a>
+                </li>
+              </ul>
+              <div class="privacy-hidden">
+                <span class="privacy__policy">Privacy policy</span>
+                <p class="privacy__text">© 2022. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-line made-by">
+            <div class="section-line__circle"><p class="made-by__text">Made by</p></div>
+          </div>
+          <div class="footer__privacy privacy">
+            <p class="privacy__text">© 2022. All rights reserved.</p>
+            <a href="#" class="footer__logo">
+              <picture>
+                <source srcset="img/footer/logo-360.png" media="(max-width: 500px)" />
+                <img src="img/footer/logo.png" alt="logo pyrobyte" />
+              </picture>
+            </a>
+            <span class="privacy__policy">Privacy policy</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+  </body>
+</html>
