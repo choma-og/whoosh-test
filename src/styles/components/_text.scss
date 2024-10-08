@@ -1,0 +1,58 @@
+.text {
+  &__container {
+    padding: 95px 70px 89px 85px;
+    align-items: center;
+  }
+  &__descr {
+    display: inline;
+    line-height: 24px;
+  }
+  &__main {
+    display: inline;
+  }
+  &__btn {
+    padding: 5px 3px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccdbfc;
+    border-radius: 4px;
+    gap: 2px;
+    transform: translateY(-2px);
+    transition: all 0.3s ease 0s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__hidden {
+    line-height: 24px; 
+    display: none;
+
+    &._more {
+      padding-top: 20px;
+      display: inline;
+    }
+  }
+}
+
+@include xxl {
+  .text__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@include xl {
+  .text__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@include sm {
+  .text__container {
+    padding-top: 63px;
+    padding-bottom: 47px;
+  }
+}

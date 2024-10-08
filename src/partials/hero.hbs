@@ -1,0 +1,121 @@
+<section class="hero">
+  <div class="hero__container">
+    <div class="hero__content">
+      <div class="hero__service service">
+        <h2 class="service__title">Our service started work in New York</h2>
+        <p class="service__text">We&nbsp;make delivery exactly at&nbsp;the time
+          you need&nbsp;&mdash; we&nbsp;can start to&nbsp;fulfill the order
+          a&nbsp;few minutes after it&nbsp;arrives, or&nbsp;we&nbsp;can deliver
+          on&nbsp;a&nbsp;specific day and hour.</p>
+        <a href="#" class="service__read">
+          Read more
+          <img src="/public/img/hero/vector-more.svg" alt="read more" />
+        </a>
+      </div>
+      <div class="hero__video video">
+        <h3 class="video__title">How it works</h3>
+        <div class="video__block">
+          <button class="video__block-play">
+            <picture class="stages__img">
+              <source
+                srcset="/public/img/hero/play-360.png"
+                media="(max-width: 480px)"
+              />
+              <img src="/public/img/hero/play.png" alt="play" />
+            </picture>
+          </button>
+          <img src="/public/img/hero/video.jpg" alt="video" />
+        </div>
+      </div>
+    </div>
+    <div class="hero__request parsel">
+      <div class="parsel__content">
+        <div class="parsel__box">
+          <h3 class="parsel__title">Send a Parcel</h3>
+          <div class="parsel__tooltip tooltip">
+            <p class="parsel__tooltip-text">A commission is a piece of work that
+              someone is asked to do and is paid for.</p>
+            <div class="parsel__tooltip-icon">
+              <svg
+                width="2"
+                height="12"
+                viewBox="0 0 2 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 5C0 4.44772 0.447715 4 1 4C1.55228 4 2 4.44772 2 5V11C2 11.5523 1.55228 12 1 12C0.447715 12 0 11.5523 0 11V5Z"
+                  fill="white"
+                />
+                <path
+                  d="M0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="parsel__switch switch">
+          <input type="radio" name="radio" id="car" />
+          <label for="car" class="label1">
+            <img src="img/hero/car.svg" alt="human" />
+            <span>up to 10lb</span>
+          </label>
+          <input type="radio" name="radio" id="car2" checked />
+          <label for="car2" class="label2">
+            <img src="img/hero/car.svg" alt="car" />
+            <span>up to 130lb</span>
+          </label>
+          <input type="radio" name="radio" id="car3" />
+          <label for="car3" class="label3">
+            <img src="img/hero/truck.svg" alt="truck" />
+            <span>over 130lb</span>
+          </label>
+        </div>
+        <form class="parsel__form form-parsel">
+          <div class="form-parsel__content">
+            <label class="form-parsel__fiel pickup__fiel" for="pickup">
+              <span class="form-parsel__location">Pickup location</span>
+              <input
+                id="pickup"
+                class="form-parsel__input"
+                type="text"
+                name="pickup"
+                placeholder="location"
+              />
+            </label>
+            <label class="form-parsel__fiel pickup__drop" for="drop">
+              <span class="form-parsel__location">Drop location</span>
+              <input
+                id="drop"
+                class="form-parsel__input"
+                type="text"
+                name="drop"
+                placeholder="location"
+              />
+            </label>
+          </div>
+          <button type="submit" class="form-parsel__btn btn">Order</button>
+          <button type="reset" class="form-parsel__clear">
+            <img src="/public/img/hero/clear.svg" alt="clear" />
+            Clear All
+          </button>
+        </form>
+      </div>
+      <div class="hero__track track">
+        <h3 class="track__title">Track a package</h3>
+        <form class="track__form" action="" method="post">
+          <input
+            class="track__input"
+            type="text"
+            placeholder="Enter code"
+            aria-label="Track a Package"
+          />
+          <a class="track__btn" href="#">
+            <img src="/public/img/hero/search.svg" alt="track" />
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
